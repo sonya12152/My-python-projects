@@ -1,0 +1,16 @@
+greetings = input("Hi!, what is your name? ")
+print("Hello", greetings, "Let's play a game! ")
+import random 
+secret_number = random.randint(1, 10)
+guess = int(input("guess a number between 1 and 10: ")
+attempts = 5
+while attempts > 0:
+     user_input = int(input("enter your guess: "))
+     if user_input == secret_number:
+        print("you won! ")
+        break
+     else:
+        attempts -= 1
+        print("try again! you have", attempts, "attempts left ")
+        if attempts == 0:
+        print("you lost, the secret number was", secret_number)
