@@ -1,0 +1,12 @@
+name = input("what is your name? ")
+num1 = float(input("enter first number "))
+num2 = float(input("enter second number "))
+operation = input(" what operation would you like to preferm? (+, -, *, /): ")
+if operation == "+":
+   result = num1 + num2
+elif operation == "-":
+   result = num1 - num2
+elif operation == "*":
+   result = num1 * num2
+elif operation == "/"
+   result = num1 / num2
