@@ -1,0 +1,11 @@
+name = input("what is your name? ")
+hour = int(input("what hour is it? "))
+if 5 <= hour <= 11:
+    greeting = "good morning!🌅"
+elif 12 <= hour <= 17:
+    greeting = "good afternoon!☀️"
+elif 18 <= hour <= 22:
+    greeting = "good evening!🌇"
+else:
+greeting = "good night!🌌"
+print(greeting + ", " + name + "!")
