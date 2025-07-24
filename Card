@@ -1,0 +1,12 @@
+name = input("what is your name? ")
+birth_year = int(input("what year you were born? "))
+current_year = 2025
+age = current_year - birth_year
+print(f"hello, {name}!")
+print(f"you are {age} years old.")
+if age < 13:
+   print("sorry, you are too young to create an account.")
+elif age < 18:
+   print("you can create a junior account.")
+else:
+    print("you can create a full account.")
