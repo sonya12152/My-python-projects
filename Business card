@@ -1,0 +1,13 @@
+print("==============================================")
+
+name = input("what is your name? ")
+age = input("how old are you? ")
+country = input("where are you from? ")
+hobby = input("what is your hobby? ")
+
+print("==============================================")
+
+print("name: " + name)
+print("age: " + age)
+print("country: " + country)
+print("hobby: " + hobby)
