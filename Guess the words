@@ -1,0 +1,32 @@
+import random
+words = ["applae", "banana", "cherry", "grape", "kiwi"]
+word = random.choice(words)
+guessed_letters = []
+name = input("Hi guys, do you want to play? ")
+if name.lower() == "yes":
+   print("Great! Let's play!💕 ")
+   attempts = 5
+   while attempts > 0:
+       display_word = ""
+       for letter in word:
+           if letter in guessed_letters:
+              display_word += letter + " "
+           else:
+               display_word += "_ "
+       print("word:", display_word)
+       guess = input("Guess a letter: ").lower()
+       if guess in word:
+          if guess not in guessed_letters:
+             guessed_letters.append(guess)
+          print("you got it right! ")
+       else:
+           attempts -= 1
+           print(lyou got it wrong❌.")
+           print("you have", attempts, "attempts left.")
+       if all(letters in guessed_letters for letter in word):
+          print("🥳 you won! the word was: ", word)
+          break
+       if attempts == 0:
+          print("💀 you lost! The word was:", word)
+else:
+    print("Okay! Maybe next time!☺️")
