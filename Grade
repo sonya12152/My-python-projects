@@ -1,0 +1,12 @@
+name = input("what is your name? ")
+score = int(input("what is your score? ")
+if score >= 90:
+   print("your grade is A")
+elif score >= 80:
+   print("your score is B")
+elif score >= 70:
+   print("your score is C")
+elif score >= 60:
+   print("your score is D")
+else:
+   print("your score is F")
