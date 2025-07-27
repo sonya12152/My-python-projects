@@ -1,0 +1,13 @@
+name = input("what is your name? ")
+weighr = float(input("enter your weight in kg: "))
+hight = float(input("enter your heught in cm: ")) / 100
+bmi = weight / (height ** 2)
+print(f"{name}, your bmi is: {round(bmi, 1)}")
+if bmi < 18.5:
+    print("you are underweight")
+elif bmi < 25:
+    print("you are normal")
+elif bmi < 30:
+      print("you are overweight")
+else:
+    print("you are obese")
